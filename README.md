@@ -9,3 +9,5 @@ I used a component I had created from my practice website for the nav bar after 
 I installed font awesome from 'https://fontawesome.com/icons' and this I used for adding icons to my buttons.
 I imported browser router on App.js to facilitate smooth browsing through the mock pages on Ui. 
 
+The "build" folder that has the complete optimized package of the UI is in the public folder.
+

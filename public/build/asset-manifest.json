@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1af1fa7b.css",
+    "main.js": "/static/js/main.0fcb3def.js",
+    "static/media/hammers.png": "/static/media/hammers.9fe7efef9ff509ba583f.png",
+    "static/media/missing freq.png": "/static/media/missing freq.644e847b1f4b95e7123f.png",
+    "static/media/usericon.png": "/static/media/usericon.ec96715bf47e543b26c5.png",
+    "static/media/ToolHub.svg": "/static/media/ToolHub.4264bcfbe33a511fec99567563cbcf83.svg",
+    "index.html": "/index.html",
+    "main.1af1fa7b.css.map": "/static/css/main.1af1fa7b.css.map",
+    "main.0fcb3def.js.map": "/static/js/main.0fcb3def.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1af1fa7b.css",
+    "static/js/main.0fcb3def.js"
+  ]
+}
