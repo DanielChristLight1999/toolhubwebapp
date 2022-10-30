@@ -45,11 +45,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 5rem;
 }
 .toolhub__herosection-image img {
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: auto;
     animation: bounce 1.2s;
     animation-direction: alternate;
     animation-timing-function: cubic-bezier(.1, 0.01, 0.5, .5);
