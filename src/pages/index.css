@@ -599,7 +599,6 @@
     display: flex;
     margin: 6rem;
     justify-content: center;
-    border: solid red;
 }
 
 .toolhub__dashboard-missingtools_percentage-container {
