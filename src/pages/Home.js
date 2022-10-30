@@ -15,31 +15,30 @@ function Home() {
             
         </div>
         <div className="toolhub__tasksection">
-            <div className="toolhub__tasksection-content">
-                <div className="toolhub__tasksection-content_toolheader">
-                    <h3>Tool Information</h3>
+        <div className="toolhub__tasksection-container">
+            <div className="toolhub__tasksection-header_container">
+                <div className="toolhub__tasksection-header">
+                <h1>Tool Info</h1>
+                <div className="line"></div>
                 </div>
-                <div className="line"/>
-                <div className="toolhub__tasksection-content_tooldetails-container">
-                <div className="toolhub__tasksection-content_tooldetails">
+                <p>There are tools with some of its information missing on the tool hub. Find the information and submit it to climb the leaderboard.</p>
+            </div>
+            <div className="toolhub__tasksection-details">
+                <div className="toolhub__tasksection-details_info">
                     <p>Name: Pywikibot</p>
-                    <p>Missing Info: Pywikibot</p>
+                    <p>Missing info: Repository url</p>
                     <p>Difficulty: Easy</p>
                 </div>
-                <div className="toolhub__tasksection-content_toolinstructions">
-                    <p>There are tools with some of its information missing on the tool hub. Find the information and submit it to climb the leaderboard. </p>
-                    <p>Find More info about the tool by clicking here</p>
+                <div className="toolhub__tasksection-details_moreinfo">
+                    <p>Find more info about the tool by clicking here</p>
                 </div>
-                </div>
-                <div className="toolhub__tasksection-content_tasksubmit-container">
-                    <div className="submit__input">
-                        <a href="#">Skip</a>
-                        <input></input>
-                        <button type="button">Submit</button>
-                    </div>
-                </div>
-
             </div>
+            <div className="toolhub__tasksection-tasksubmit">
+                <button type="button">Submit</button>
+                <input></input>
+                <a href="#">Skip task</a>
+            </div>
+        </div>
         </div>
         </>
     )
