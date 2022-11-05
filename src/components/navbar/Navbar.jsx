@@ -9,7 +9,7 @@ const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   const Menu = () => (
     <>
-          <p><NavLink activeClassName="active" to='/home'>Home</NavLink></p>
+          <p><NavLink activeClassName="active" to='/'>Home</NavLink></p>
           <p><NavLink activeClassName="active" to='/dashboard'>Dashboard</NavLink></p>
           <p><NavLink activeClassName="active" to='/leaderboard'>Leaderboard</NavLink></p>
     </>
