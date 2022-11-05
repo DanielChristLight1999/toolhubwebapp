@@ -1,15 +1,17 @@
 import React, { useState } from 'react';
 import {RiMenu3Line, RiCloseLine} from 'react-icons/ri'
-import logo from '../../assets/ToolHub.svg';
+import logo from '../../assets/Toolhub_community_logo.svg.png';
 import './navbar.css';
+import {NavLink} from 'react-router-dom'
+
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   const Menu = () => (
     <>
-          <p><a href='/'>Home</a></p>
-          <p><a href='/dashboard'>Dashboard</a></p>
-          <p><a href='/leaderboard'>Leaderboard</a></p>
+          <p><NavLink activeClassName="active" to='/home'>Home</NavLink></p>
+          <p><NavLink activeClassName="active" to='/dashboard'>Dashboard</NavLink></p>
+          <p><NavLink activeClassName="active" to='/leaderboard'>Leaderboard</NavLink></p>
     </>
   )
   return (

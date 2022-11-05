@@ -17,8 +17,8 @@
 }
 
 .gpt3__navbar-links_logo img{
-    width: 144px;
-    height: 48px;
+    width: 10vh;
+    height: auto;
 }
 
 .gpt3__navbar-links_container {
@@ -31,7 +31,10 @@
     justify-content: flex-end;
     align-items: center;
 }
-
+.active{
+    color: #fff;
+    border-bottom: solid white;
+}
 .gpt3__navbar-links_container p,
 .gpt3__navbar-sign p,
 .gpt3__navbar-menu_container p {

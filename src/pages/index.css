@@ -2,7 +2,8 @@
 .toolhub__herosection {
     display: flex;
     margin-top: 5rem;
-    width:100%;
+    padding-left: 7vh;
+    padding-right: 7vh;
 
 }
 
@@ -12,7 +13,6 @@
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    margin: 5rem 5rem;
 }
 
 
@@ -21,12 +21,12 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    margin-right: 10rem;
 
     font-size: 48px;
     font-family: var(--font-family);
 
 }
+
 
 .toolhub__herosection-content p {
     font-family: var(--font-family);
@@ -69,291 +69,152 @@
 /* tasks section */
 .toolhub__tasksection {
     display: flex;
-    justify-content: center;
-    margin-top: 15rem;
-    margin-bottom: 5rem;
-    width: 100%;
-    padding: 50px;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 23vh;
+    padding-bottom: 15vh;
 
 }
-.toolhub__tasksection-container {
+.toolhub__tasksection-tasktool{
+    width: 150vh;
+    background: rgba(249, 201, 252, 0.22);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     display: flex;
     flex-direction: column;
-    width: 1106px;
-    height: 536px;
-    padding: 20px;
-    
-    background: linear-gradient(180deg, rgba(69, 41, 98, 0.69) 18.1%, rgba(68, 52, 52, 0.455608) 58.02%, rgba(69, 41, 98, 0.69) 100%);
-    box-shadow: -28px 19px 30px rgba(0, 0, 0, 0.25);
-    border-radius: 62px;
-    
+    padding-top: 5vh;
+    padding-bottom: 6vh;
+    padding-left: 2vh;
+    justify-content: space-evenly;
 }
-.toolhub__tasksection-header_container {
+.toolhub__tasksection-tasktool:hover {
+    -webkit-box-shadow: 0px 5px 62px 7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 5px 62px 7px rgba(0,0,0,0.75);
+    box-shadow: 0px 5px 62px 7px rgba(0,0,0,0.75);
+}
+.toolhub__tasksection-heading {
     display: flex;
-    flex-direction: row;
-    padding: 30px;
-    flex-wrap: wrap;
+    padding-top: 3vh;
 }
-.toolhub__tasksection-header {
-    display: flex;
-    flex-direction: column;
-    flex: 2;
-}
-.toolhub__tasksection-header h1 {
-
+.toolhub__tasksection-heading h1{
+    flex: 1;
     font-family: var(--font-family);
-    font-weight: 800;
-    font-size: 32px;
-    line-height: 44px;
     color: #FFFFFF;
-    
 }
-.line {
-    width: 39px;
-    height: 8px;    
+.toolhub__tasksection-heading p {
+    font-family: var(--font-family);
+    flex: 1;
+    color: #FFFFFF;
+}
+
+
+.line{
+    width: 8vh;
+    height: 1vh;    
     background: #E7657C;
+    margin-left: 1vh;
 }
-.toolhub__tasksection-header_container p {
-    width: 454px;
-    height: 81px;
-    
-    font-family: var(--font-family);
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 27px;
-    margin-left: 10rem;
-    
-    color: #FFFFFF;
-    
+.searchbar{
+    width: 100%;
+
 }
-.toolhub__tasksection-details {
-    display: flex;
-    flex-direction: row;
-    margin-top: 2rem;
-}
-.toolhub__tasksection-details_info{
+.searchbar input{
     display: flex;
     flex-direction: column;
-    flex: 0.8;
-}
-.toolhub__tasksection-details_info p{
-    width: 454px;
-    height: 81px;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    border-radius: 5vh;
+    border: none;
+    padding: 2vh;
     
-    font-family: var(--font-family);
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 27px;
-    
-    color: #FFFFFF;
-}
-.toolhub__tasksection-details_moreinfo {
-    margin-left: 6rem;
-}
-.toolhub__tasksection-details_moreinfo p {
-    width: 366px;
-    height: 54px;
-    font-family: var(--font-family);
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 27px;
-    
-    color: #FFFFFF;
+    width: 30vh;
+    height: 3vh;
     
 }
-.toolhub__tasksection-tasksubmit {
+.searchbar input:focus {
+    outline: none;
+}
+
+.toolhub__tasksection-toolinfo {
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-start;
-    width: auto;
-    margin-right: 1rem;
 }
-.toolhub__tasksection-tasksubmit input {
-    width: 388px;
-    height: 52px;    
-    background: #D9D9D9;
-    border-radius: 29px;
+.toolhub__tasksection-toolinfo p {
+    color: #FFFFFF;
+    font-family: var(--font-family);
+    margin-top: 7vh;
+    
+}
+.toolinfo {
+    flex: 1;
+}
+.moreinfo{
+    flex: 1;
+}
+.toolinfo p {
+    font-family: var(--font-family);
+    font-size: 3vh;
+}
+
+
+
+.toolhub__tasksection-submit {
+    display: flex;
+    padding-top: 5vh;
+    align-items: center;
+}
+.toolhub__tasksection-submit input {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    border-radius: 5vh;
+    border: none;
+    padding: 3.5vh;
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
-    border: none;
+    
+    width: 45vh;
+    height: 6vh;
     
 }
-.toolhub__tasksection-tasksubmit button {
-    width: 95px;
-    height: 52px;    
+.toolhub__tasksection-submit input:focus {
+    outline: none;
+}
+.toolhub__tasksection-submit button {
+    width: 10vh;
+    height: 7vh;
+    font-size: 2vh;
+    border: none;
+    color: white;
+    font-family: var(--font-family);
+    
     background: #E44461;
     border-radius: 30px;
-    border: none;
-    font-family: var(--font-family);
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 27px;
-    color: #FFFFFF;
-    border-bottom-left-radius: 0;
-    border-top-left-radius: 0;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
     cursor: pointer;
-    
 }
-
-.toolhub__tasksection-tasksubmit a {
-    width: 81px;
-    height: 27px;    
+.toolhub__tasksection-submit a {
     font-family: var(--font-family);
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 27px;
-    text-decoration-line: underline;
-    margin-top: 1rem;
-    margin-right: 0.5rem;
-    color: #FFFFFF;
-    
-    
+    text-decoration: underline;
+    padding-left: 1vh;
 }
 
-@media screen and (max-width: 1200px) {
 
-    .toolhub__herosection-image img {
-        width: 100%;
-        height: 100%;
-    }
-    .toolhub__herosection-content h1 {
-        font-size: 32px;
-    }
-    .toolhub__herosection-content p {
-        font-size: 14px;
-    }
-    .toolhub__tasksection {
-        flex-flow: column wrap;
-        padding: 0;
-        width: 100%;
-        align-items: center;
-    }
-    .toolhub__tasksection-header_container {
-        flex-direction: column;
-        flex-wrap: wrap;
-        width: 50%;
-        
-    }
-    .toolhub__tasksection-header_container p {
-        margin: 2rem 0rem;
-        font-size: 18px;
-
-    }
-    .toolhub__tasksection-header_container h1 {
-        font-size: 25px;
-    }
-    .line {
-        width: 29px;
-        height: 4px;
-    }
-    .toolhub__tasksection-details_info p {
-        font-size: 18px;
-        margin-left: 2rem;
-    }
-    .toolhub__tasksection-details {
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-    .toolhub__tasksection-container {
-        display: flex;
-        flex-direction: column;
-        width: 50%;
-        height: 100%;
-        padding: 20px;
-
-    }
-    .toolhub__tasksection-details_moreinfo {
-        margin: 0 2rem;
-    }
-    .toolhub__tasksection-details_moreinfo p {
-        font-size: 16px;
-    }
-    .toolhub__tasksection-tasksubmit {
-        margin-right: 7rem;
-    }
-    .toolhub__tasksection-tasksubmit button {
-        width: 85px;
-        height: 42px;
-    }
-    .toolhub__tasksection-tasksubmit input {
-        width: 208px;
-        height: 42px;
-    }
-    .toolhub__tasksection-tasksubmit a {
-        font-size: 15px;
-        margin: 0;
-    }
-
-}
-
-@media screen and (max-width: 1050px) {
-    .toolhub__herosection {
-        flex-direction: column;
-    }
-    .toolhub__herosection-image img {
-        width: 50%;
-        height: 50%;
-        margin-top: 5rem;
-    }
-
-}
-@media screen and (max-width: 980px) {
-    .toolhub__tasksection-details_moreinfo p {
-    font-size: 14px;
-    }
-    .toolhub__tasksection-header_container {
-       width: 100%; 
-       padding-right: 20px;
-    }
-    .toolhub__tasksection-container {
-        width: 100%;
-    }
-    .toolhub__tasksection-tasksubmit {
-        width: 100%;
-        justify-content: flex-end;
-        flex-direction: row-reverse;
-    }
-    
-}
-@media screen and (max-width: 550px) {
-    .toolhub__herosection-content p {
-        font-size: 12px;
-    }
-    .toolhub__herosection-content h1 {
-        font-size: 20px;
-    }
-    .toolhub__tasksection-header_container p {
-        font-size: 14px;
-        width: 100%;
-    }
-    .toolhub__tasksection-header {
-        width: 100%;
-    }
-    .toolhub__tasksection-details_info {
-        width: 100%;
-    }
-    .toolhub__tasksection-details {
-        margin-top: 0;
-    }
-    .toolhub__tasksection-details_info p {
-        font-size: 16px;
-    }
-}
 
 /***LeaderBoard Styling****/
 
 .toolhub__leaderboard{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    width: 100%;
-    padding-left: 40px;
 }
 
 .toolhub__leaderboard-header {
-    display: flex;
-    word-wrap: break-word;
-    width: 30%;
+    width: 80%;
 }
 .toolhub__leaderboard-header h1 {
     font-family: var(--font-family);
@@ -371,76 +232,70 @@
 
 .toolhub__leaderboard-details_container {
     display: flex;
-    flex-wrap: wrap;
     width: 100%;
-    padding-left: 50px;
+    align-items:center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding-bottom: 5vh;
+    padding-top: 5vh;
 
 }
 
 
-.toolhub__leaderboard-user {
-    width: 50%;
-}
+
 .toolhub__leaderboard-user_container {
-    margin: 5rem;
-    margin-left: 2rem;
-    width: 417px;
-    height: 400px;
     background: #ffffff;
     box-shadow: 0px 10px 4px rgba(0, 0, 0, 0.25);
     border-radius: 14px;
-    padding-left: 15px;
+    height: 60vh;
+    width: 35vw;
+    padding-left: 2vh;
+    
 }
 
 
 .toolhub__leaderboard-user-id p {
     font-family: var(--font-family);
-    font-weight: 800;
+    font-weight: 400;
     font-size: 24px;
     line-height: 30px;
     color: #041131;
-    margin-top: 2rem;
+    margin-top: 5vh;
 
 }
-.toolhub__leaderboard-rankings {
-    width: 50%;
-}
+
 .toolhub__leaderboard-rankings_container {
-    margin: 1rem;
     display: flex;
-    width: 549px;
-    height: 567px;
+    width: 40vw;
+    height: 80vh;
     background: #FFFFFF;
     box-shadow: 0px 14px 4px rgba(0, 0, 0, 0.25);
     border-radius: 14px;
-    padding: 10px;
     flex-direction: column;
+    padding: 2vh;
 }
 .toolhub__leaderboard-rankings_container-wrap {
-    margin-right: 1rem;
-    margin-top: 1rem;
     display: flex;
-    width: 100%;
-    height: 100%;
-    padding-right: 10px;
     flex:1;
+    align-items: center;
+    justify-content: center;
 }
 .toolhub__leaderboard-rankings_pagination {
     flex: 0.5;
     display: flex;
-    padding: 20px;
-    margin-top: 10px;
+    align-items: center;
+    padding-right: 2vh;
+    
 }
 .toolhub__leaderboard-rankings_pagination p{
     flex: 1;
     font-family: var(--font-family);
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 2vh;
+    margin-left: 2vh;
     /* identical to box height, or 150% */
     
-    letter-spacing: 0.5px;
     
     color: #000000;
 }
@@ -449,32 +304,22 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 8px 32px 8px 16px;
-    gap: 8px;
+    gap: 2vh;
+    margin-left: 1rem;
     
-    width: 151px;
-    height: 32px;
+    width: 17vh;
+    height: 4.5vh;
     cursor: pointer;
     
     background: #041131;
     border-radius: 32px;
     
-    /* Inside auto layout */
-    
-    flex: none;
-    order: 0;
-    flex-grow: 0;
     font-family: var(--font-family);
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    /* identical to box height, or 114% */
-    
-    display: flex;
-    align-items: center;
+    font-size: 1.5vh;
     text-align: center;
-    letter-spacing: 1.25px;
+    letter-spacing: 0.2vw;
     text-transform: uppercase;
     
     color: #FFFFFF;
@@ -487,8 +332,8 @@
 .toolhub__leaderboard-rankings_completed h2 {
     font-family: var(--font-family);
     font-weight: 800;
-    font-size: 24px;
-    line-height: 33px;
+    font-size: 3.5vh;
+    line-height: 5vh;
     color: #142e6e;
 }
 .toolhub__leaderboard-rankings_rank p, 
@@ -496,8 +341,7 @@
 .toolhub__leaderboard-rankings_completed p {
     font-family: var(--font-family);
     font-weight: 800;
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 2.5vh;
     color: #041131;
     margin-top: 3rem;
 }
@@ -526,9 +370,9 @@
     flex-flow: column wrap;
 }
 .toolhub__dashboard-header {
-    margin: 5rem;
     text-align: left;
     margin-bottom: 1rem;
+    width: 100%;
     
 }
 
@@ -544,131 +388,59 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
-.toolhub__dashboard-toolsmetric_container {
-    margin-left: 13rem;
-    margin-top: 0rem;
-    width: 1047px;
-    height: 304px;
+.metric-container{
     display: flex;
+    justify-content: space-evenly;
+    flex:0.9;
+}
+.toolhub__dashboard-toolsmetric_container-outerrim {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.piechartcontainer {
+    display: flex;
+    height: 53vh;
+    width: 25vw;
+}
+
+.toolhub__dashboard-toolsmetric_container {
+    width: 19vw;
+    height: 30vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
     
     background: #F1EDEC;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 35px;
 }
-.toolhub__dashboard-toolsmetric_metric_1 {
-    display: flex;
-    flex-flow: column wrap;
-    margin: 3rem;
-    margin-top: 5rem;
-    margin-left: 7rem;
-}
-.toolhub__dashboard-toolsmetric_metric_1-head h1 {
+.toolhub__dashboard-toolsmetric_container h1 {
+    font-size: 2.5vh;
     font-family: var(--font-family);
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 16px;
-    
-    letter-spacing: 1.25px;    
-    color: #000000;
 }
 
-.toolhub__dashboard-toolsmetric_metric_1-body{
-    display: flex;
-    margin-top: 2rem;
-}
-
-.toolhub__dashboard-toolsmetric_metric_1-body img{
-    flex: 1;
-}
-.toolhub__dashboard-toolsmetric_metric_1-body p{
-    flex: 1;
+.toolhub__dashboard-toolsmetric_container p {
+    font-size: 3.9vh;
     font-family: var(--font-family);
-    font-weight: 700;
-    font-size: 32px;
-    margin: 1rem;
-
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 1.25px;    
-    color: #000000;
-    
 }
 
-.toolhub__dashboard-missingtools_container {
+.toolhub__dashboard-missingtools_frequency_total {
     display: flex;
-    margin: 6rem;
+    flex-direction: column;
     justify-content: center;
-}
-
-.toolhub__dashboard-missingtools_percentage-container {
-    width: 531px;
-    height: 304px;
-    padding: 50px;
-    
-    background: #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 35px;
-}
-.toolhub__dashboard-missingtools_percentage-container h1 {
-    font-family: var(--font-family);
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 16px;
-    
-    display: flex;
     align-items: center;
-    text-align: center;
-    letter-spacing: 1.25px;
-    text-transform: uppercase;
-    
-    color: #000000;
-    
-}
-
-.toolhub__dashboard-missingtools_percentage-container_details {
-    display: flex;
-    padding: 20px;
-    margin-left: 2rem;
-    padding-bottom: 0px;
-}
-.toolhub__dashboard-missingtools_percentage-container_details p{
-    font-family: var(--font-family);
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 16px;    
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 1.25px;
-    text-transform: uppercase;
-    
-    color: #000000;
-    
-}
-.toolhub__dashboard-missingtools_percentage-container_changes {
-    display: flex;
-    margin-left: 10rem;
-}
-.toolhub__dashboard-missingtools_percentage-container_changes p {
-    font-family: var(--font-family);
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 16px;    
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 1.25px;
-    text-transform: uppercase;
-    
-    color: #000000;
-    
+    max-width: 100%;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
 }
 .toolhub__dashboard-missingtools_frequency-container {
-    width: 472px;
-    height: 304px;
-    margin-left: 2rem;
-    padding: 40px;
+    width: 90vw;
+    height: 65vh;
+    padding: 20px;
     
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -688,12 +460,214 @@
     text-align: center;
     letter-spacing: 1.25px;
     text-transform: uppercase;
+    margin-bottom: 2vh;
     
     color: #000000;
     
     
 }
-.toolhub__dashboard-missingtools_frequency-container img {
-    width: 100%;
-    height: 100%;
+@media screen and (max-width:1050px) {
+    .toolhub__herosection-content h1 {
+        font-size: 42px;
+    }
+    .toolhub__herosection-content p {
+        font-size: 15px;
+    }
+    .toolhub__tasksection-heading h1 {
+        font-size: 3.5vh ;
+    }
+    .toolhub__tasksection-heading p {
+        font-size: 2vh;
+    }
+
+    .toolhub__tasksection-toolinfo p {
+        font-size: 2vh;
+    }
+    .toolinfo p {
+        font-family: var(--font-family);
+        font-size: 2.7vh;
+    }
+    .toolhub__tasksection-submit input {
+        width: 35vh;
+        height: 6vh;
+    }
+    
+    .toolhub__herosection-image img {
+        max-width: 25vh;
+    }
+    .toolhub__dashboard-header h1{
+        font-size: 42px;
+    }
+    .toolhub__dashboard-toolsmetric_container {
+        width: 15vw;
+        height: 20vh;
+        border-radius: 2vh;
+    }
+    .toolhub__dashboard-toolsmetric_container h1 {
+        font-size: 2vh;
+        font-weight: 200;
+        
+    }
+    
+    .toolhub__dashboard-toolsmetric_container p {
+        font-size: 3.9vh;
+        font-family: var(--font-family);
+    }
+    .piechartcontainer {
+        width: 30%;
+        height: 40vh;
+    }
+    .toolhub__leaderboard-rankings_rank h2, 
+    .toolhub__leaderboard-rankings_Userid h2,
+    .toolhub__leaderboard-rankings_completed h2 {
+        font-weight: 700;
+        font-size: 2.5vh;
+
+    }
+    .toolhub__leaderboard-rankings_rank p, 
+    .toolhub__leaderboard-rankings_Userid p,
+    .toolhub__leaderboard-rankings_completed p {
+        font-weight: 800;
+        font-size: 1.5vh;
+    }
+    
+    .toolhub__leaderboard-rankings_pagination p{
+        font-weight: 400;
+        font-size: 1.5vh;
+        margin-left: 2vh;
+        /* identical to box height, or 150% */
+        
+        
+        color: #000000;
+    }
+    .toolhub__leaderboard-rankings_pagination button{        
+        width: 15vh;
+        height: 3.5vh;
+        font-size: 1.5vh;
+        margin-right: 2vh;
+    
+    }
+    .toolhub__leaderboard-user-id p {
+        font-size: 2.8vh;
+    }
+
 }
+
+@media screen and (max-width: 790px) {
+    .toolhub__herosection-content h1 {
+        font-size: 38px;
+    }
+    .toolhub__herosection-content p {
+        font-size: 12px;
+    }
+  
+}
+
+@media screen and (max-width: 561px) {
+    .toolhub__herosection-content h1 {
+        font-size: 30px;
+        padding-left: 2vh;
+    }
+    .toolhub__herosection-content p {
+        font-size: 15px;
+        margin: 0;
+        margin-top: 1vh;
+        padding-left: 2vh;
+    }
+    .toolhub__herosection {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .toolhub__tasksection-heading h1 {
+        font-size: 3vh;
+    }
+    .toolhub__tasksection-heading p {
+        font-size: 1.8vh;
+    }
+    .toolhub__tasksection-toolinfo p {
+        font-size: 1.8vh;
+    }
+    .line {
+        display: none;
+    }
+    .toolhub__tasksection-submit input {
+        width: 25vh;
+        height: 6vh;
+    }
+    .searchbar input{
+        width: 20vh;
+    }
+    .toolhub__dashboard-header{
+        padding-left: 5vh;
+        margin: 0;
+        text-align: left;
+    }
+    .toolhub__dashboard-header h1{
+        font-size: 35px;
+        margin: 0;
+    }
+    .toolhub__dashboard-toolsmetric_container {
+        width: 28vw;
+        height: 17vh;
+        border-radius: 1vh;
+        margin-left: 2vh;
+        margin-top: 2vh;
+    }
+    .toolhub__dashboard-toolsmetric_container h1 {
+        font-size: 1.5vh;
+        font-weight: 200;
+        
+    }
+    
+    .toolhub__dashboard-toolsmetric_container p {
+        font-size: 3vh;
+        font-family: var(--font-family);
+    }
+    .metric-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .piechartcontainer {
+        width: 40vh;
+        height: auto;
+        padding-top: 8vh;
+    }
+    .toolhub__dashboard-toolsmetric_container-outerrim {
+        flex-direction: column;
+    }
+    .toolhub__dashboard-missingtools_frequency-container h1{
+        font-size: 15px;
+    }
+    .toolhub__leaderboard-details_container {
+        display: flex;
+        flex-flow: column wrap;
+        width: 100%;
+        align-items:center;
+        justify-content: space-evenly;
+        padding-bottom: 5vh;
+        padding-top: 5vh;
+    }
+    .toolhub__leaderboard-user_container {
+        width: 50vh;
+        height: 50vh;
+    }
+    .toolhub__leaderboard-user_container p{
+        font-size: 2vh;
+    }
+    .user-icon img{
+        height: 20vh;
+        width: auto;
+    }
+    .toolhub__leaderboard-header h1 {
+        font-size: 35px;
+    }
+    .toolhub__leaderboard-rankings_container {
+        width: 50vh;
+        margin-top: 2vh;
+    }
+    
+}
+
